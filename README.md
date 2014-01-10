@@ -760,6 +760,7 @@ end
 Padrino.cache = Moneta.new(:Memory, :expires => true)
 
 # Application caching
+enable :caching
 # Don't forget the :expires => [true, Integer] if you want expiration support!
 set :cache, Moneta.new(:Memory, :expires => true)
 ~~~
